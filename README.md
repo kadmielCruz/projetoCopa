@@ -17,3 +17,8 @@ Boostrap
 
 Projeto finalizado e rodando:
 https://kadmielcruz.github.io/projetoCopa/
+
+colaboradores com seus usuarios do git: 
+Eduarda : EduardaVeronica
+Gustavo:GustavoHenriqueAlencar
+Arthur: Arthur-Rodrigues-De-Souza
