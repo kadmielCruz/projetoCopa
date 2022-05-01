@@ -1,0 +1,258 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* banner principal da copa*/
+
+
+#bannerOficial{
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.6rem;
+    margin-bottom: 20px;
+    
+}
+
+#banner{
+    margin:15px;
+}
+
+#mascote{
+    width: 370px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+    
+
+.texto{
+    padding: 10px;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.texto1{
+ 
+ 
+   margin: 20px 0;
+
+}
+
+/* imagem do mapa*/
+#mapa{
+    width: 400px;
+    height: auto;
+
+    float: right;
+
+    margin: 5px;
+}
+
+#imgQatar{
+    width: 500px;
+    height: auto;
+    
+}
+
+
+#main{
+    
+    background-color: #ffff;
+    padding: 20px 30px ;
+    margin: 0 5px 10px 5px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+#copaMundo{
+    text-align: center;
+    
+}
+*/
+
+
+
+/*Estadios*/
+
+body #estadios{
+    background-image: url(imagens/bandeira\ catar\ 4.svg);
+    background-repeat: repeat;
+    margin:0;
+    
+    border:2px solid black;
+    
+}
+table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+section.p, section.li{
+    color:rgba(255, 255, 255, 0.849);
+    font-size: 18;
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-family: 'Bebas Neue',cursive ;
+    font-style: italic;
+}
+h2{
+font-family: 'Libre Baskerville', serif;
+}
+section{
+    position: relative;
+    text-align: center;
+    justify-items: center;
+}
+.img{
+    border-radius: 100%;
+    max-width: 300px;
+    border: 1px solid black;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    background-color: rgb(146, 28, 28);
+    color: rgb(8, 1, 1);
+}
+.trEstadio:nth-child(even) {
+    background-color: #943333
+}
+
+/*GRUPOS*/
+.grupo{
+    margin: -1.5rem;
+    margin-top: -2rem;
+display: flex;   
+align-items: center;
+justify-content: space-around;
+min-height: 100px;
+text-transform: uppercase;
+background-color: #270212;
+background-image: linear-gradient(90deg, #270212 15%, #8e1840 50%, #270212 100%);
+
+}
+
+nav li {
+display: inline;
+padding: 1rem;
+}
+
+nav a {
+text-transform: uppercase;
+color: white;
+font-weight: bold;
+font-size: 1.4rem;
+text-decoration: none;
+}
+
+fx{
+font-family: 'Roboto Slab', serif;
+}
+
+
+.title-center{
+text-align: center;
+}
+
+.leftext{
+text-align: left;   
+padding-top: 1.5rem;     
+column-count: 2;
+}
+
+.leftext img{
+padding-right: 1.5rem;
+float: left;
+width: 20rem;
+}
+
+.rightext {
+padding-top: 1.5rem;
+}
+
+.rightext img {
+float: right; 
+padding-left: 1.5rem;
+width: 13rem;
+
+}
+
+.paddingtopics{
+width: 60%;
+border-bottom: 1px solid black;
+padding-bottom: 1rem;
+margin: auto;
+display: flex;
+}
+
+.trstyle th {
+font-size:1.45rem;
+}
+
+.trstyle img{
+width: 8rem; 
+padding-top: 1rem;
+
+}
+
+
+p2{
+font-size: xx-large
+}
+
+footer {
+margin: -1.5rem;
+    text-align: center;
+    padding: 3px;
+background-color: #270212;
+background-image: linear-gradient(90deg, #270212 15%, #8e1840 50%, #270212 100%);
+color: black;
+font-size: 1rem;
+bottom: 0;
+}
+
+/*tabelas dos grupos*/
+
+.tableGrup{
+    border: 2px solid black;
+    padding: 14px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+    height: 185px;
+    background-color: azure;
+}
+#tabelaCopa{
+    background-color: white;
+}
+.linha{
+    border-bottom:2px solid ;
+
+    
+}
+.titulo_tabela{
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.linha td{
+    width: 50;
+    height: 50;
+}
+
+
+
+.tableGrup th{
+    background-color: #EAEAEA;
+}
+#imagem_tabela{
+    width: 35px; 
+    height: 25px;
+}

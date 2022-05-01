@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    
+
+</head>
+
+<!------Primeiro time do grupo D------------------------------>
+<!------------------------------------------------------------>
+
+<body style="padding: 1.5rem; background-color: #ffffff;
+background-image: linear-gradient(225deg, #ffffff 0%, #d1cdd4 100%);">
+
+    <header class="grupo">
+        <h1 style="color: white;">Copa do Mundo 2022</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="Estádios.html">Estádios</a></li>
+                <li><a href="tabela_copa.html">Grupos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <a style="text-align: right;" href="grupoB.html"><p>proximo</p></a>
+    <span class="title-center">
+        <h1>Grupo A</h1>
+        <p>clique em cima dos países</p>
+    </span>
+    <br>
+
+
+
+    <div id="accordion" >
+        <div class="card"  style="width: 60%; margin: auto;">
+            <a class="btn btn-outline-light text-black border-dark" data-bs-toggle="collapse" href="#collapseOne" style="width: 100%; text-align: left;">
+                <h2>Qatar</h2>
+            </a>
+        </div>
+    </div>
+
+    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+
+    <div class="paddingtopics">
+    <div class="leftext">
+        
+        <img src="data:image/jpeg;base64,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" alt="bandeira_catar">
+
+        <p><p2>Copas Jogadas</p2><br>
+            A Seleção Catariana de Futebol representa o Catar nas competições de futebol da FIFA. O Catar sediará a Copa do Mundo FIFA de 2022, e consequentemente participará de sua primeira Copa com a sua seleção.
+        </p>
+    </div>
+    </div>
+
+    <div class="paddingtopics">
+    <div class="rightext">
+        <p>
+        <img src="data:image/jpeg;base64,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">
+
+        <p2>Técnico</p2><br>
+        
+        Félix Sánchez Bas (Barcelona - 13 de dezembro de 1975) é um técnico espanhol. Atualmente comanda a Seleção Qatariana
+
+        <br><br><p2>Premiações</p2><br> Em 2019, o Catar conquistou o título mais importante de sua história, a Copa da Ásia de 2019, vencendo o Japão, por 3–1. A final foi disputada em Dubai, nos Emirados Árabes Unidos.
+        </p>
+    </div>
+    </div>
+
+    <div class="paddingtopics">
+    <div class="leftext">
+        <img src="https://leiemcampo.com.br/wp-content/uploads/2020/08/ali-afc-1140x810.jpg" alt="">
+
+        <p><p2>Principais Jogadores</p2>
+            <ul> 
+                <li>Emerson Sheik</li>
+                <li>Rodrigo Tabata</li>
+                <li>Pedro Ró-Ró</li>
+                <li>Hussain Yasser </li>
+                <li>Montezine</li>
+                <li>Luiz Mairton </li>
+            </ul> 
+        </p>
+    </div>
+    </div>
+
+    
+    <div class="paddingtopics" style="padding-top: 1rem;">
+    <table class="table" width="75%" align="center" style="margin-bottom: 0;" >
+        
+        <thead class="thead-dark" style="font-size: x-large; text-align: center;" >
+
+            <tr>
+                <th colspan="6">Jogos</th>
+            </tr>
+
+        </thead>
+
+        <tbody class="trstyle">
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 07:00 <br> 21/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.tVz4ktjsjzuXmQtWLVl0QQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 13:00 <br> 25/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.CRaFEJrCfuBj6Jc%7c_qUM7A--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 12:00 <br> 29/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.lULQX9CI5oWkX%7caaIpIeZQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    </div>
+
+
+    </div>
+    </div>
+</div>
+
+    
+
+    </div>
+
+<!------Segundo time do grupo D------------------------------>
+<!------------------------------------------------------------>
+<br>
+<div id="accordion" >
+    <div class="card"  style="width: 60%; margin: auto;">
+        <a class="btn btn-outline-light text-black border-dark" data-bs-toggle="collapse" href="#collapseTwo" style="width: 100%; text-align: left;">
+            <h2>Equador</h2>
+        </a>
+    </div>
+</div>
+
+<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+    <div class="card-body">
+
+    <div class="paddingtopics">
+    <div class="leftext">
+
+        <img src="data:image/png;base64,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" alt="bandeira_equador">
+
+        <p><p2>Copas Jogadas</p2><br>
+            A seleção equatoriana participou de três edições da Copa do Mundo de futebol. Os equatorianos estiveram nos mundiais de 2002, 2006 e 2014. O melhor desempenho da seleção do Equador foi quando chegou às oitavas de final em 2006.
+        </p>
+    </div>
+    </div>
+
+    <div class="paddingtopics">
+    <div class="rightext">
+        <p>
+            <img src="https://th.bing.com/th/id/R.f9a5feaae43ac448e9648c751994b0c1?rik=pmDx%2bQnB1ZnWOQ&pid=ImgRaw&r=0" alt="">
+
+        <p2>Técnico</p2><br>
+        
+        Técnico argentino Gustavo Alfaro vai comandar a seleção do Equador. O técnico argentino Gustavo Alfaro foi anunciado como novo treinador da seleção do Equador.
+
+        <br><br><p2>Premiações</p2><br>        Medalha de Ouro nos Jogos Pan-americanos: 2007, Copa Coréia: 1 (1995); Medalha de Ouro nos Jogos Bolivarianos: 1965 e 1985; Copa Canadá: 1 (1999) ; Copa Desafio Latino: 1 (2007); Torneio da Amizade: 1 (2003); Copa Municipal de Honduras: 1 (2011); Copa Claro: 1 (2012).
+
+        </p>
+    </div>
+    </div>
+
+    <div class="paddingtopics">
+    <div class="leftext">
+        <img src="https://img.a.transfermarkt.technology/portrait/big/139503-1603567945.jpeg?lm=1" alt="">
+
+        <p><p2>Principais Jogadores</p2><br>
+            <ul> 
+            
+                <li>Álex Aguinaga;</li>
+                <li>Agustín Delgado;</li>
+                <li>Iván Hurtado;</li>
+                <li>Jefferson Montero; </li>
+                <li>Édison Méndez; </li>
+                <li>Edmundo Zura; </li>
+                <li> Carlos Tenorio; </li>
+                <li> Antonio Valencia; </li>
+                <li>  Robert Arboleda; Iván Hurtado;
+                <li> Ulisses de La Cruz. </li>
+            </ul>
+            </p>
+    </div>
+    </div>
+
+    
+    <div class="paddingtopics" style="padding-top: 1rem;">
+        <table class="table" width="75%" align="center" style="margin-bottom: 0;" >
+            
+            <thead class="thead-dark" style="font-size: x-large; text-align: center;" >
+    
+                <tr>
+                    <th colspan="6">Jogos</th>
+                </tr>
+    
+            </thead>
+    
+            <tbody class="trstyle">
+                <tr style="text-align: center;">
+                    <th class="table-dark">Al Bayt <br> 13:00 <br> 21/11/2022</th>
+                    <td><img src="https://www.bing.com/th?id=OSB.lULQX9CI5oWkX%7caaIpIeZQ--.png&w=50&h=50&o=6&pid=SANGAM" alt=""></td>
+                    <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                    <td><img src="https://www.bing.com/th?id=OSB.CRaFEJrCfuBj6Jc%7c_qUM7A--.png&w=50&h=50&o=6&pid=SANGAM" alt=""></td>
+                </tr>
+    
+                <tr style="text-align: center;">
+                    <th class="table-dark">Al Bayt <br> 13:00 <br> 25/11/2022</th>
+                    <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                    <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                    <td><img src="https://www.bing.com/th?id=OSB.CRaFEJrCfuBj6Jc%7c_qUM7A--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                </tr>
+    
+                <tr style="text-align: center;">
+                    <th class="table-dark">Al Bayt <br> 12:00 <br> 29/11/2022</th>
+                    <td><img src="https://www.bing.com/th?id=OSB.CRaFEJrCfuBj6Jc%7c_qUM7A--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                    <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                    <td><img class="border-dark" src="https://www.bing.com/th?id=OSB.tVz4ktjsjzuXmQtWLVl0QQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                </tr>
+    
+            </tbody>
+    
+        </table>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+
+        </div>
+
+    <!------Terceiro time do grupo D------------------------------>
+<!------------------------------------------------------------>
+
+<br>
+    <div id="accordion" >
+        <div class="card"  style="width: 60%; margin: auto;">
+            <a class="btn btn-outline-light text-black border-dark" data-bs-toggle="collapse" href="#collapseThree" style="width: 100%; text-align: left;">
+                <h2>Senegal</h2>
+            </a>
+        </div>
+    </div>
+
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+    <div class="card-body">
+
+<div class="paddingtopics">
+<div class="leftext">
+
+    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/7/7c/FSenegalaiseF.png/150px-FSenegalaiseF.png" alt="bandeira_dinamarca">
+
+    <p><p2>Copas Jogadas</p2><br>
+        O Senegal participou de sua primeira Copa do Mundo em 2002. A seleção senegalesa participou de sua segunda Copa do Mundo de futebol em 2018. A seleção do Senegal é conhecida como os Leões de Teranga.
+
+    </p>
+</div>
+</div>
+
+<div class="paddingtopics">
+<div class="rightext">
+    <p>
+    <img src="https://th.bing.com/th/id/R.4fbacfbca23ab7f31d8680236d7bf16a?rik=yswyoyVuQ7fFeQ&pid=ImgRaw&r=0" alt="">
+
+    <p2>Técnico</p2><br>
+    
+    Aliou Cissé (Ziguinchor, 24 de março de 1976) é um treinador e ex-futebolista senegalês. Atualmente, comanda a Seleção Senegalesa.
+
+    <br><br><p2>Premiações</p2><br>  Campeonato Africano das Nações
+    15 participações (1965, 1968, 1986, 1990, 1992, 1994, 2000, 2002, 2004, 2006, 2008, 2012, 2015, 2017, 2019);
+    2 vezes vice-campeão (2002, 2019);
+    3 vezes en quarto lugar (1965, 1990, 2006).
+    </p>
+</div>
+</div>
+
+<div class="paddingtopics">
+<div class="leftext">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Sadio_Man%C3%A9_Senegal.jpg" alt="">
+
+    <p><p2>Principais Jogadores</p2><br>
+        <ul> 
+            
+            <li>Abdoulaye Ba</li>
+            <li>Fary Faye</li>
+            <li>Demba Ba</li>
+            <li>Babá Diawara </li>
+            <li>Papiss Cissé</li>
+            <li>M’Baye Niang </li>
+            <li>Modou Sougou </li>
+           
+        </ul> 
+        </p>
+</div>
+</div>
+
+
+<div class="paddingtopics" style="padding-top: 1rem;">
+    <table class="table" width="75%" align="center" style="margin-bottom: 0;" >
+        
+        <thead class="thead-dark" style="font-size: x-large; text-align: center;" >
+
+            <tr>
+                <th colspan="6">Jogos</th>
+            </tr>
+
+        </thead>
+
+        <tbody class="trstyle">
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 07:00 <br> 21/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.tVz4ktjsjzuXmQtWLVl0QQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM  alt=""></td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 10:00 <br> 25/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.tVz4ktjsjzuXmQtWLVl0QQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.lULQX9CI5oWkX%7caaIpIeZQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 12:00 <br> 29/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.CRaFEJrCfuBj6Jc%7c_qUM7A--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.tVz4ktjsjzuXmQtWLVl0QQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+<!------Quarto time do grupo D------------------------------>
+<!------------------------------------------------------------>
+
+<br>
+    <div id="accordion" >
+        <div class="card"  style="width: 60%; margin: auto;">
+            <a class="btn btn-outline-light text-black border-dark" data-bs-toggle="collapse" href="#collapseFour" style="width: 100%; text-align: left;">
+                <h2>Holanda</h2>
+            </a>
+        </div>
+    </div>
+
+    <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+    <div class="card-body">
+
+<div class="paddingtopics">
+<div class="leftext">
+
+    <img src="https://www.bing.com/th?id=A489b74feeec0330e50c52ba851145409&w=124&h=168&c=7&o=6&pid=SANGAM" alt="bandeira_holanda">
+
+    <p><p2>Copas Jogadas</p2><br>
+        A seleção holandesa participou de dez edições da Copa do Mundo de futebol. A seleção de futebol masculino dos Países Baixos é conhecida como Oranje, Holanda, Laranja Mecânica, entre outros apelidos. A seleção holandesa já foi três vezes vice-campeã (1974, 1978 e 2010), terceiro lugar em 2014 e quarto lugar em 1998, mas ainda não foi campeã do mundo.
+
+</div>
+</div>
+
+<div class="paddingtopics">
+<div class="rightext">
+    <p>
+    <img src="https://th.bing.com/th/id/R.4f178175e275262d9abbcfc95892491b?rik=1zl5eDe%2bfoeGSg&pid=ImgRaw&r=0" alt="">
+
+    <p2>Técnico</p2><br>
+    
+    Van Gaal volta a ser técnico da seleção holandesa. Louis Van Gaal, de 69 anos, está de volta ao comando da seleção holandesa até 2022.
+
+    <br><br><p2>Premiações</p2><br> Eurocopa	1	1988; Torneio Internacional Amador: 1 (1948); Torneio Internacional de Paris: 1 (1978); Copa Bastão de Nasazzi: 7 (1978, 1985, 1986, 1998, 2000, 2002 e 2009);
+    Copa 100° Aniversário da KNVB: 1 (1989); Copa Challenge Nelson Mandela: 1 (1997); Copa do Atlântico Juvenil: 1 (1993)
+    </p>
+</div>
+</div>
+
+<div class="paddingtopics">
+<div class="leftext">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/20160604_AUT_NED_8876_2.jpg" alt="">
+
+    <p><p2>Principais Jogadores</p2><br>
+        <ul> 
+            
+            <li>Marco Van Basten</li>
+            <li> Dennis Bergkamp</li>
+            <li>Ronald Koeman</li>
+            <li> Ruud Krol </li>
+            <li> Johan Neeskens </li>
+            <li>Frank Rijkaard, Ruud Gullit </li>
+           
+           
+        </ul> 
+        </p>
+</div>
+</div>
+
+
+<div class="paddingtopics" style="padding-top: 1rem;">
+    <table class="table" width="75%" align="center" style="margin-bottom: 0;" >
+        
+        <thead class="thead-dark" style="font-size: x-large; text-align: center;" >
+
+            <tr>
+                <th colspan="6">Jogos</th>
+            </tr>
+
+        </thead>
+
+        <tbody class="trstyle">
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 07:00 <br> 21/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.tVz4ktjsjzuXmQtWLVl0QQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 13:00 <br> 25/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.CRaFEJrCfuBj6Jc%7c_qUM7A--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+
+            <tr style="text-align: center;">
+                <th class="table-dark">Al Bayt <br> 12:00 <br> 29/11/2022</th>
+                <td><img src="https://www.bing.com/th?id=OSB.jQhkEXLNr0ibYBhERotJ7g--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+                <td style="font-size: 70px; font-weight: bold;" ><fx>X</fx></td>
+                <td><img src="https://www.bing.com/th?id=OSB.lULQX9CI5oWkX%7caaIpIeZQ--.png&w=50&h=50&o=6&pid=SANGAM"  alt=""></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>   
+
+</body>
+<br><br><br><br>
+
+<footer>
+    <p>Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+</html>
