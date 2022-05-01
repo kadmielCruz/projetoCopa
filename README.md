@@ -16,4 +16,4 @@ Boostrap
 
 
 Projeto finalizado e rodando:
-https://codigo-final-maratona-discover.vercel.app
+https://kadmielcruz.github.io/projetoCopa/
