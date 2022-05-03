@@ -22,3 +22,5 @@ colaboradores com seus usuarios do git:
 Eduarda : EduardaVeronica
 Gustavo:GustavoHenriqueAlencar
 Arthur: Arthur-Rodrigues-De-Souza
+Carianny
+nicolas: Nicolas Souza Ferreira
